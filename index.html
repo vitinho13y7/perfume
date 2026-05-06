@@ -5,6 +5,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfume</title>
+    <style>
+        /* Estilos rápidos para demonstração visual do main */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: #faf5f0;
+            color: #2e241f;
+            line-height: 1.5;
+        }
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* header minimalista */
+        .top-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid #e8d9ce;
+            padding-bottom: 1rem;
+        }
+        .top-header h1 {
+            font-size: 2.5rem;
+            letter-spacing: -0.5px;
+            color: #4a3428;
+        }
+        .top-header p {
+            color: #a48163;
+            font-style: italic;
+        }
+
+        /* parte principal (main) */
+        .hero {
+            background: linear-gradient(105deg, #fff6ef 0%, #f9ede3 100%);
+            border-radius: 2rem;
+            padding: 2rem 2rem 2rem 2.5rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            border: 1px solid #f1e2d6;
+        }
+
+        .hero h2 {
+            font-size: 1.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #3c2a20;
+        }
+
+        .hero .highlight {
+            font-size: 1.2rem;
+            color: #9b6e4c;
+            font-weight: 500;
+            margin-bottom: 1.2rem;
+            border-left: 4px solid #dbb48b;
+            padding-left: 1rem;
+        }
+
+        .hero p {
+            margin-bottom: 1rem;
+            color: #4f3b2e;
+            max-width: 85%;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: #e6cfbc;
+            padding: 0.3rem 1rem;
+            border-radius: 40px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #543a28;
+            margin-top: 0.8rem;
+        }
+
+        .destaque-grid {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+
+        .destaque-card {
+            background: white;
+            flex: 1;
+            min-width: 200px;
+            padding: 1.2rem;
+            border-radius: 1.4rem;
+            box-shadow: 0 5px 14px rgba(0,0,0,0.02);
+            border: 1px solid #eedfcb;
+            transition: all 0.2s;
+        }
+
+        .destaque-card i {
+            font-size: 1.8rem;
+            color: #b87a53;
+            margin-bottom: 0.6rem;
+            display: inline-block;
+        }
+
+        .destaque-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .destaque-card p {
+            font-size: 0.85rem;
+            color: #6e5542;
+        }
+
+        .info-secao {
+            background: #fffaf5;
+            border-radius: 1.5rem;
+            padding: 1.5rem;
+            margin-top: 1rem;
+            text-align: center;
+            border: 1px solid #e8d8cc;
+        }
+
+        .info-secao a {
+            color: #a57148;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        @media (max-width: 700px) {
+            .hero p {
+                max-width: 100%;
+            }
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -12,14 +151,51 @@
 
         <header>
             <main>
-                <section>
-                    
-                </section>
+                <sectionclass="hero">
+                    <h2>✨ Mais que perfume, uma assinatura</h2>
+                    <div class="highlight">“A memória que fica no ar, o toque que transforma o dia.”</div>
+                    <p>Na <strong>Essência Aromática</strong>, acreditamos que o perfume é a expressão invisível da
+                        personalidade. Cada frasco carrega notas que despertam emoções, trazem confiança e criam laços
+                        com o mundo. Nossa curadoria reúne fragrâncias autorais, desde florais delicados até amadeirados
+                        intensos, pensados para momentos únicos.</p>
+                    <p>🧴 Explore nosso menu olfativo e encontre a combinação que reflete o seu estilo. Perfumes
+                        nacionais e importados, com ingredientes que respeitam a pele e a arte da perfumaria.</p>
+                    <span class="hero-badge">🍃 Livre de crueldade • Vegan • Essências premium</span>
+    </div>
 
-            </main>
-            <footer>
-                <P>Vitor tomé</P>
-            </footer>
+    <!-- seção de destaques (3 pilares da marca) -->
+    <div class="destaque-grid">
+        <div class="destaque-card">
+            <i>🌿</i>
+            <h3>Notas autorais</h3>
+            <p>Combinações exclusivas com toques de madeiras nobres, flores raras e cítricos vibrantes.</p>
+        </div>
+        <div class="destaque-card">
+            <i>💧</i>
+            <h3>Longa duraçāo</h3>
+            <p>Alta concentração de óleos essenciais, garantindo fixação macia e elegante por horas.</p>
+        </div>
+        <div class="destaque-card">
+            <i>🌎</i>
+            <h3>Beleza sustentável</h3>
+            <p>Embalagens recicláveis e parcerias com produtores locais, do cultivo ao frasco.</p>
+        </div>
+    </div>
+
+    <!-- pequeno conteúdo sobre a arte da perfumaria -->
+    <div class="info-secao">
+        <p>🔍 <strong>Dica do perfumista</strong> : Aplique o perfume nos pontos de pulsação (punhos, pescoço e atrás
+            das orelhas) e nunca esfregue os dois pulsos – isso amassa as moléculas aromáticas. Deixe secar
+            naturalmente! </p>
+        <p style="margin-top: 0.8rem;">📖 Conheça mais sobre as famílias olfativas no nosso <a href="#">Guia de
+                Fragrâncias</a> ou visite nossa loja física.</p>
+
+        </section>
+
+        </main>
+        <footer>
+            <P>Vitor tomé</P>
+        </footer>
         </header>
 
     </div>
